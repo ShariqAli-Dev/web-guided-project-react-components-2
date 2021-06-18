@@ -13,8 +13,8 @@ export default function FriendsList(props) {
       {/* 👉 3- We need to loop over the data rendering a Friend as we go */}
       {/* Each friend is going to need a `key` prop and also some other prop with data */}
       {
-        props.friendsData.map(friend => {
-          return <Friend key={friend.id} friend={friend} changeStatus={props.changeStatus} />
+        props.friendsData2.map(friend => {
+          return <Friend key={friend.id} friend={friend} changeStatus3={props.changeStatus2} />
         })
       }
     </div>
