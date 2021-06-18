@@ -4,8 +4,7 @@ import PetsList from './PetsList'
 export default function Friend(props) {
   // 👉 1- What does a Friend need?
   const { changeStatus, friendObject } = props
-  const { age, hobbies, id, married, name } = friendObject
-
+  const { age, hobbies, id, married, name, pets } = friendObject
 
   return (
     <div className='friend-friends container'>
@@ -35,9 +34,10 @@ export default function Friend(props) {
           {/* 👉 3- What data does the PetsList need? */}
           {/* What is the exact name of the prop/props it expects? */}
           {/* Is the data around here somewhere so I may pass it? */}
-          <PetsList />
+          <PetsList pets={pets}/>
         </div>
       </div>
     </div>
   )
 }
+
