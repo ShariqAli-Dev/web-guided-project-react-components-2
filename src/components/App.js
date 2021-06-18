@@ -22,10 +22,10 @@ export default function App() {
   // changes the `married` from true to false and viceversa
   const changeStatus = (id) => {
     setFriendsData(
-      // if "friend" in line25 is friend1
+      // if "friend" in line26 is friend1
       friendsData.map((friend) => {
         if (friend.id === id) {
-          // friend in line 28 is friend2
+          // friend in line 29 is friend2
           return { ...friend, married: !friend.married };
         } else return friend;
       })
